@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conocé nuestra variedad 🍪</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="tienda">
+
+  <!-- 🔸 Header -->
+  <header class="header">
+    <nav class="navegacion">
+      <ul>
+        <li><a href="cookies.html">Inicio</a></li>
+        <li><a href="#">Realizá tu compra</a></li>
+        <li><a href="#">Comunicate con nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔸 Hero -->
+  <section class="hero">
+    <h1>¡Ahora estamos a la vuelta de la esquina!</h1>
+    <p>Desayunos deliciosos, cookies irresistibles 🍪</p>
+    <button class="btn" onclick="location.href='cookies.html'">Descubrí más</button>
+  </section>
+
+  <!-- 🔸 Fichero -->
+  <section class="fichero">
+    <h2 class="titulo">Conocé nuestra variedad</h2>
+
+    <div class="tabs">
+      <button class="tab btn" onclick="mostrarFicha('chips')">🍪 Chips</button>
+      <button class="tab btn" onclick="mostrarFicha('redvelvet')">🍪 Red Velvet</button>
+      <button class="tab btn" onclick="mostrarFicha('banana')">🍪 Banana</button>
+    </div>
+
+    <div id="ficha-chips" class="ficha oculto">
+      <img src="img/chipsdechocolate_1.jpg" alt="Cookie Chips" />
+      <h3>Cookie Chips</h3>
+      <p>Clásica cookie con chips de chocolate semi amargo. Crocante por fuera, suave por dentro. Ideal para acompañar con leche fría 🥛</p>
+    </div>
+
+    <div id="ficha-redvelvet" class="ficha oculto">
+      <img src="img/redvelvet.jpg" alt="Cookie Red Velvet" />
+      <h3>Cookie Red Velvet</h3>
+      <p>De color vibrante y sabor intenso, con corazón de chocolate blanco. La preferida para sorprender 😍</p>
+    </div>
+
+    <div id="ficha-banana" class="ficha oculto">
+      <img src="img/banana.jpg" alt="Cookie Banana" />
+      <h3>Cookie Banana</h3>
+      <p>Hecha con banana madura y nueces. Suave, húmeda y perfecta para los que buscan algo diferente 🍌</p>
+    </div>
+  </section>
+
+  <script src="fichero.js"></script>
+</body>
+</html>
