@@ -1,0 +1,128 @@
+.container{
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #b8aa93;
+  z-index: 1000;
+  height: 80px; 
+}
+
+.header .menu{
+  display: flex;
+  gap: clamp(12px, 4vw, 40px);
+  align-items: center;
+  justify-content: center; 
+  
+} 
+
+.header .menu a{
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: .12em;
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 6px 2px;
+}
+
+
+body.shop-page {
+  background-color: #ddd2c0;
+ /*background-image: url('img/shopfondo.jpg'); */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+  padding-top: 100px;
+}
+
+.titulo-shop {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 50px; 
+  letter-spacing: 3px; 
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1); 
+  margin-bottom: 60px;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;         
+  gap: 5rem;               
+  justify-content: center; 
+  padding: 10rem;
+}
+
+
+.productos-container .card {
+  max-width: 250px;
+  background-color: #fbece2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.productos-container .card:hover {
+  transform: scale(1.03);
+}
+
+
+.card {
+  background-color: #f8e8dc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #5c4033;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #cd8b62;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #b37450;
+}

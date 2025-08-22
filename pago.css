@@ -1,0 +1,31 @@
+main {
+  margin-top: 120px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #b8aa93;
+  z-index: 1000;
+  height: 80px;
+}
+
+
+
+
+body.shop-page {
+  background-color: transparent;
+  background-image: url('img/shopfondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+  padding-top: 100px;
+  background-attachment: fixed
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Mr. Cookie</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aboutus.css" />
+</head>
+<body>
+
+
+      <header>
+  
+        <div class="header">
+        <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="shop.html">SHOP</a>
+        <a href="#">CONTACT US</a>
+        </div>
+        </div>
+    
+  </header>
+
+  <main>
+
+    <section class="about-hero">
+      <div class="container about-hero__content">
+        <h1>La historia detrás de cada mordisco</h1>
+        <p>Somos una cocina pequeña con un sueño grande: hornear momentos felices, una cookie a la vez.</p>
+      </div>
+    </section>
+
+   
+    <section class="about-grid container">
+      <article class="about-card">
+        <h2>Nuestros comienzos</h2>
+        <p>
+          Mr. Cookie nació de la receta familiar que siempre terminaba con una bandeja vacía y muchas sonrisas.
+          Probamos, ajustamos y encontramos el punto justo: <strong>crocantes por fuera, suaves por dentro</strong>.
+        </p>
+      </article>
+
+      <figure class="about-photo">
+        <img src="img/box.jpg" alt="Cocina artesanal horneando cookies">
+      </figure>
+    </section>
+
+   
+    <section class="values">
+      <div class="container values__inner">
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">🥣</div>
+          <h3>Artesanal</h3>
+          <p>Pequeños lotes, manos reales y atención al detalle en cada horneada.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">🌾</div>
+          <h3>Ingredientes reales</h3>
+          <p>Manteca, chocolate de verdad y materias primas seleccionadas.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">😊</div>
+          <h3>Felicidad simple</h3>
+          <p>Sabores que abrazan la memoria y hacen más dulce tu día.</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="about-cta">
+      <div class="container about-cta__box">
+        <h2>¿Listo para tu mordisco de felicidad?</h2>
+        <p>Elegí tus sabores favoritos y te los preparamos fresquitos.</p>
+        <a class="btn btn--primary" href="index.html#shop">Ver sabores</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mr. Cookie. Todos los derechos reservados.</small>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
