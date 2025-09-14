@@ -46,10 +46,14 @@
       <button type="submit" class="btn btn-primary">Confirmar pedido</button>
     </form>
 
-
-
+    <!-- Mensaje de éxito -->
     <div id="mensaje-exito" class="alert alert-success mt-4 text-center" style="display:none;">
       ✅ ¡Pago procesado con éxito! Gracias por tu compra 🍪
+    </div>
+
+    <!-- Botón para volver al inicio -->
+    <div class="text-center mt-3">
+      <button id="btn-volver-inicio" class="btn btn-outline-secondary" style="display:none;">Volver al inicio</button>
     </div>
   </div>
 
@@ -57,6 +61,9 @@
     const retiro = document.getElementById('retiro');
     const envio = document.getElementById('envio');
     const direccionEnvio = document.getElementById('direccionEnvio');
+    const form = document.getElementById('form-pago');
+    const mensaje = document.getElementById('mensaje-exito');
+    const btnVolver = document.getElementById('btn-volver-inicio');
 
     retiro.addEventListener('change', () => {
       direccionEnvio.style.display = 'none';
@@ -66,15 +73,19 @@
       direccionEnvio.style.display = 'block';
     });
 
-  
-
-    
-    const form = document.getElementById('form-pago');
-    const mensaje = document.getElementById('mensaje-exito');
-
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // Mostrar mensaje de éxito
       mensaje.style.display = 'block';
+
+      // Mostrar botón de volver
+      btnVolver.style.display = 'inline-block';
+    });
+
+    btnVolver.addEventListener('click', () => {
+      localStorage.removeItem("carrito"); // Limpia el carrito
+      window.location.href = "index.html"; // Vuelve al inicio
     });
   </script>
 </body>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cookie chips",
+    "precio": 500,
+    "img": "img/chipsdechocolate_1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Cookie Red velvet",
+    "precio": 600,
+    "img": "img/redvelvet.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cookie Banana",
+    "precio": 550,
+    "img": "img/banana.jpg"
+  }
+]

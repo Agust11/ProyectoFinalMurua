@@ -29,3 +29,18 @@ body.shop-page {
   padding-top: 100px;
   background-attachment: fixed
 }
+
+#btn-volver-inicio {
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#btn-volver-inicio:hover {
+  background-color: #c58e5d;
+}
